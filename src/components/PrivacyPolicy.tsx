@@ -209,10 +209,10 @@ const PrivacyPolicy: React.FC = () => {
                     Owner & Website Controller: <span className="font-semibold">Manu Bharadwaz Yadavalli</span>
                   </p>
                   <p className="text-dark-text-secondary leading-relaxed">
-                    Privacy/Support: <a href="mailto:privacy@paragraph.com" className="text-accent-blue underline">privacy@paragraph.com</a>
+                    Privacy/Support: <a href="mailto:privacy@paragraph.com" className="text-accent-blue underline">support@paragraph.com</a>
                   </p>
                   <p className="text-dark-text-secondary leading-relaxed mt-2">
-                    <span className="font-semibold">Grievance Officer (India):</span> Manu Bharadwaz Yadavalli, support@paragraph.in, +91-9704927613, Villa no78, Mystic Hills Villas, Green Hills Moosapet Road , Blanagar, Rangareddy, 500018, RANGA REDDY, , TELANGANA, 500018<br />
+                    <span className="font-semibold">Grievance Officer (India):</span> Manu Bharadwaz Yadavalli, <a href="mailto:privacy@paragraph.com" className="text-accent-blue underline">support@paragraph.in</a>, +91-9704927613, Villa no78, Mystic Hills Villas, Green Hills Moosapet Road , Blanagar, Rangareddy, 500018, RANGA REDDY, , TELANGANA, 500018<br />
                     Jurisdiction: Hyderabad, Telangana, India.
                   </p>
                   <p className="text-dark-text-secondary leading-relaxed mt-2">
