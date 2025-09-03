@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Play } from 'lucide-react';
+import Header from './Header';
 
 const HeroSection: React.FC = () => {
   const [typedText, setTypedText] = useState('');
@@ -22,6 +23,9 @@ const HeroSection: React.FC = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 py-20 overflow-hidden">
+      {/* Header with Logo */}
+      <Header />
+      
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-dark-bg via-dark-surface to-dark-bg">
         <div className="absolute inset-0 bg-hero-gradient opacity-10"></div>
