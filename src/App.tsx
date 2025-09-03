@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './components/HomePage';
 import TermsAndConditions from './components/TermsAndConditions';
 import PrivacyPolicy from './components/PrivacyPolicy';
+import HelpCenter from './components/HelpCenter';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/legal/terms" element={<TermsAndConditions />} />
         <Route path="/legal/privacy" element={<PrivacyPolicy />} />
+        <Route path="/help" element={<HelpCenter />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

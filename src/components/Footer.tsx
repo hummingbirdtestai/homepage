@@ -82,7 +82,7 @@ const Footer: React.FC = () => {
     {
       title: 'Support',
       links: [
-        { name: 'Help Center', href: '/help', icon: ExternalLink, isInternal: false }
+        { name: 'Help Center', href: '/help', icon: ExternalLink, isInternal: true }
       ]
     }
   ];
@@ -161,15 +161,16 @@ const Footer: React.FC = () => {
                           </motion.div>
                         </Link>
                       ) : (
-                        <motion.a
-                          href={link.href}
-                          whileHover={{ x: 5 }}
-                          transition={{ duration: 0.2 }}
-                          className="group flex items-center gap-2 text-dark-text-secondary hover:text-accent-cyan transition-colors duration-300"
-                        >
-                          <link.icon className="w-4 h-4 group-hover:text-accent-blue transition-colors duration-300" />
-                          {link.name}
-                        </motion.a>
+                        <Link to={link.href}>
+                          <motion.div
+                            whileHover={{ x: 5 }}
+                            transition={{ duration: 0.2 }}
+                            className="group flex items-center gap-2 text-dark-text-secondary hover:text-accent-cyan transition-colors duration-300"
+                          >
+                            <link.icon className="w-4 h-4 group-hover:text-accent-blue transition-colors duration-300" />
+                            {link.name}
+                          </motion.div>
+                        </Link>
                       )}
                     </li>
                   ))}
