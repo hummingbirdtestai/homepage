@@ -6,6 +6,7 @@ import KeyDifferentiators from './KeyDifferentiators';
 import CommunityBanner from './CommunityBanner';
 import PitchStoryboard from './PitchStoryboard';
 import FinalCTA from './FinalCTA';
+import Footer from './Footer';
 
 const HomePage: React.FC = () => {
   return (
@@ -27,6 +28,9 @@ const HomePage: React.FC = () => {
       
       {/* Final CTA */}
       <FinalCTA />
+      
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };

@@ -84,19 +84,6 @@ const FinalCTA: React.FC = () => {
           </div>
         </motion.div>
       </div>
-
-      {/* Footer */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 0.8 }}
-        viewport={{ once: true }}
-        className="text-center mt-16 pt-8 border-t border-dark-border"
-      >
-        <p className="text-dark-text-muted text-sm">
-          © 2025 paragraph. Transforming NEETPG preparation through AI.
-        </p>
-      </motion.div>
     </section>
   );
 };
