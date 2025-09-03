@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const LogoImg: React.FC<React.ImgHTMLAttributes<HTMLImageElement>> = (props) => {
   // Try multiple candidates in order
-  const candidates = ['/logo.png', '/paragraph-logo-transparent.png', '/image.png'];
+  const candidates = ['logo.png', 'paragraph-logo-transparent.png', 'image.png'];
   const [idx, setIdx] = useState(0);
 
   const handleError = useCallback(() => {
