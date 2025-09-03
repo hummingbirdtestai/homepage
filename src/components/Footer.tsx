@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
     {
       title: 'Support',
       links: [
-        { name: 'Contact Us', href: 'mailto:support@paragraph.com', icon: Mail, isInternal: false },
+        { name: 'Contact Us', href: 'mailto:support@paragraph.in', icon: Mail, isInternal: false },
         { name: 'Help Center', href: '/help', icon: ExternalLink, isInternal: false }
       ]
     }
