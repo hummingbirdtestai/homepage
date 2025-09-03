@@ -1,5 +1,28 @@
-import React from 'react';
+import React, { useState, useCallback } from 'react';
 import { motion } from 'framer-motion';
+
+const LogoImg: React.FC<React.ImgHTMLAttributes<HTMLImageElement>> = (props) => {
+  // Try multiple candidates in order
+  const candidates = ['logo.png', 'paragraph-logo-transparent.png', 'image.png'];
+  const [idx, setIdx] = useState(0);
+
+  const handleError = useCallback(() => {
+    setIdx((prev) => (prev + 1 < candidates.length ? prev + 1 : prev));
+  }, []);
+
+  return (
+    <img
+      // ✅ use RELATIVE path so it works even if app is hosted under a subpath
+      src={candidates[idx]}
+      alt="paragraph logo"
+      loading="eager"
+      decoding="async"
+      onError={handleError}
+      className="w-full h-full object-contain"
+      {...props}
+    />
+  );
+};
 
 const Header: React.FC = () => {
   return (
@@ -17,14 +40,11 @@ const Header: React.FC = () => {
         >
           <motion.div
             animate={{ scale: [1, 1.1, 1] }}
-            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+            transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
             className="w-24 h-24 flex items-center justify-center"
           >
-            <img
-              src="/logo.png"
-              alt="paragraph logo"
-              className="w-full h-full object-contain"
-            />
+            {/* ✅ Robust logo with fallbacks */}
+            <LogoImg />
           </motion.div>
         </motion.div>
       </div>
