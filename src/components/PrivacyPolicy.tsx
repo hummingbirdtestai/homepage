@@ -212,7 +212,7 @@ const PrivacyPolicy: React.FC = () => {
                     Privacy/Support: <a href="mailto:privacy@paragraph.com" className="text-accent-blue underline">privacy@paragraph.com</a>
                   </p>
                   <p className="text-dark-text-secondary leading-relaxed mt-2">
-                    <span className="font-semibold">Grievance Officer (India):</span> [Name], [Email], [Phone], [Postal Address]<br />
+                    <span className="font-semibold">Grievance Officer (India):</span> Manu Bharadwaz Yadavalli, support@paragraph.in, +91-9704927613, Villa no78, Mystic Hills Villas, Green Hills Moosapet Road , Blanagar, Rangareddy, 500018, RANGA REDDY, , TELANGANA, 500018<br />
                     Jurisdiction: Hyderabad, Telangana, India.
                   </p>
                   <p className="text-dark-text-secondary leading-relaxed mt-2">
