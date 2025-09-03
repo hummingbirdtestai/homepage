@@ -21,7 +21,7 @@ const Header: React.FC = () => {
             className="w-24 h-24 flex items-center justify-center"
           >
             <img
-              src="/paragraph-logo-transparent.png"
+              src="/paragraph logo transparent  copy.png"
               alt="paragraph logo"
               className="w-full h-full object-contain"
             />
