@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FileText } from 'lucide-react';
 
 const Header: React.FC = () => {
   return (
@@ -18,7 +17,6 @@ const Header: React.FC = () => {
         >
           <motion.div
             animate={{ 
-              rotate: [0, 360],
               scale: [1, 1.1, 1]
             }}
             transition={{ 
@@ -26,9 +24,13 @@ const Header: React.FC = () => {
               repeat: Infinity,
               ease: "easeInOut"
             }}
-            className="w-10 h-10 bg-gradient-to-br from-accent-cyan to-accent-violet rounded-xl flex items-center justify-center"
+            className="w-12 h-12 flex items-center justify-center"
           >
-            <FileText className="w-6 h-6 text-white" />
+            <img 
+              src="/paragraph logo transparent .png" 
+              alt="paragraph logo" 
+              className="w-full h-full object-contain"
+            />
           </motion.div>
           <motion.div
             className="text-2xl font-bold"
