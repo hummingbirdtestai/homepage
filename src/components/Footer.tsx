@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { ExternalLink, Mail, FileText, Shield } from 'lucide-react';
 
 const Footer: React.FC = () => {
@@ -7,15 +8,15 @@ const Footer: React.FC = () => {
     {
       title: 'Legal',
       links: [
-        { name: 'Terms & Conditions', href: '/terms', icon: FileText },
-        { name: 'Privacy Policy', href: '/privacy', icon: Shield }
+        { name: 'Terms & Conditions', href: '/legal/terms', icon: FileText, isInternal: true },
+        { name: 'Privacy Policy', href: '/legal/privacy', icon: Shield, isInternal: true }
       ]
     },
     {
       title: 'Support',
       links: [
-        { name: 'Contact Us', href: 'mailto:support@paragraph.com', icon: Mail },
-        { name: 'Help Center', href: '/help', icon: ExternalLink }
+        { name: 'Contact Us', href: 'mailto:support@paragraph.com', icon: Mail, isInternal: false },
+        { name: 'Help Center', href: '/help', icon: ExternalLink, isInternal: false }
       ]
     }
   ];
@@ -65,15 +66,28 @@ const Footer: React.FC = () => {
               <ul className="space-y-3">
                 {section.links.map((link, linkIndex) => (
                   <li key={link.name}>
-                    <motion.a
-                      href={link.href}
-                      whileHover={{ x: 5 }}
-                      transition={{ duration: 0.2 }}
-                      className="group flex items-center gap-2 text-dark-text-secondary hover:text-accent-cyan transition-colors duration-300"
-                    >
-                      <link.icon className="w-4 h-4 group-hover:text-accent-blue transition-colors duration-300" />
-                      {link.name}
-                    </motion.a>
+                    {link.isInternal ? (
+                      <Link to={link.href}>
+                        <motion.div
+                          whileHover={{ x: 5 }}
+                          transition={{ duration: 0.2 }}
+                          className="group flex items-center gap-2 text-dark-text-secondary hover:text-accent-cyan transition-colors duration-300"
+                        >
+                          <link.icon className="w-4 h-4 group-hover:text-accent-blue transition-colors duration-300" />
+                          {link.name}
+                        </motion.div>
+                      </Link>
+                    ) : (
+                      <motion.a
+                        href={link.href}
+                        whileHover={{ x: 5 }}
+                        transition={{ duration: 0.2 }}
+                        className="group flex items-center gap-2 text-dark-text-secondary hover:text-accent-cyan transition-colors duration-300"
+                      >
+                        <link.icon className="w-4 h-4 group-hover:text-accent-blue transition-colors duration-300" />
+                        {link.name}
+                      </motion.a>
+                    )}
                   </li>
                 ))}
               </ul>
