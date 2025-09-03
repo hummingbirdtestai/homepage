@@ -220,7 +220,7 @@ const TermsAndConditions: React.FC = () => {
                   <h2 className="text-2xl font-bold text-dark-text-primary mb-4 text-accent-cyan">19. Contact</h2>
                   <p className="text-dark-text-secondary leading-relaxed">
                     For questions or concerns about these Terms, contact:{" "}
-                    <a href="mailto:support@paragraph.com" className="text-accent-blue underline">support@paragraph.com</a>
+                    <a href="mailto:support@paragraph.in" className="text-accent-blue underline">support@paragraph.in</a>
                   </p>
                   <p className="text-dark-text-secondary leading-relaxed mt-2">
                     Legal Owner: <span className="font-semibold">Manu Bharadwaz Yadavalli</span>
