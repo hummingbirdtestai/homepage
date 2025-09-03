@@ -13,31 +13,18 @@ const Header: React.FC = () => {
         <motion.div
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="inline-flex items-center gap-3 cursor-pointer group"
+          className="inline-flex items-center cursor-pointer group"
         >
           <motion.div
-            animate={{ 
-              scale: [1, 1.1, 1]
-            }}
-            transition={{ 
-              duration: 8, 
-              repeat: Infinity,
-              ease: "easeInOut"
-            }}
+            animate={{ scale: [1, 1.1, 1] }}
+            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
             className="w-12 h-12 flex items-center justify-center"
           >
-            <img 
-              src="/paragraph logo transparent .png" 
-              alt="paragraph logo" 
+            <img
+              src="/paragraph logo transparent .png"
+              alt="paragraph logo"
               className="w-full h-full object-contain"
             />
-          </motion.div>
-          <motion.div
-            className="text-2xl font-bold"
-          >
-            <span className="bg-gradient-to-r from-accent-cyan to-accent-violet bg-clip-text text-transparent">
-              paragraph
-            </span>
           </motion.div>
         </motion.div>
       </div>
