@@ -30,7 +30,7 @@ const Header: React.FC = () => {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 0.5 }}
-      className="absolute top-0 left-0 right-0 z-50 p-6"
+      className="absolute top-0 left-0 right-0 z-50 p-4"
     >
       <div className="max-w-7xl mx-auto">
         <motion.div
