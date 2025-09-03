@@ -41,7 +41,7 @@ const Header: React.FC = () => {
           <motion.div
             animate={{ scale: [1, 1.1, 1] }}
             transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
-            className="w-24 h-24 flex items-center justify-center"
+            className="w-32 h-32 flex items-center justify-center"
           >
             {/* ✅ Robust logo with fallbacks */}
             <LogoImg />
