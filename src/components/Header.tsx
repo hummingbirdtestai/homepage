@@ -18,10 +18,10 @@ const Header: React.FC = () => {
           <motion.div
             animate={{ scale: [1, 1.1, 1] }}
             transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-            className="w-12 h-12 flex items-center justify-center"
+            className="w-20 h-20 flex items-center justify-center" // Increased size from w-12 h-12 to w-20 h-20
           >
             <img
-              src="/paragraph logo transparent .png"
+              src="/paragraph-logo-transparent.png" // ✅ fixed filename (no spaces)
               alt="paragraph logo"
               className="w-full h-full object-contain"
             />
